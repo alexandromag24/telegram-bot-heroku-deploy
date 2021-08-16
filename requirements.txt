@@ -4,6 +4,3 @@ tornado>=5.1
 cryptography
 python-telegram-bot
 requests
-logging
-datetime
-typing
