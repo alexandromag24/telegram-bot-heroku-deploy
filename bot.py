@@ -134,7 +134,7 @@ def callback_alarm(context):
     global datev
     global datef
     datef = datetime.strptime(query[0]["node"]["updatedOnToOrder"], '%Y-%m-%dT%H:%M:%S.%f%z')
-    if datev == None or datef < datev:
+    if datev == None or datef > datev:
         datev =  datetime.strptime(query[0]["node"]["updatedOnToOrder"], '%Y-%m-%dT%H:%M:%S.%f%z')
         for s in query:
             # print(s['node'])    
